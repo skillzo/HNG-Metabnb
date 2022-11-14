@@ -5,7 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import logo from "../..//assest/img/Vector-1.png";
 import Wrapper2 from "../UI/Wrapper2/Wrapper";
 import { Link } from "react-router-dom";
-function Navbar({ isOpened, openHandler, setIsOpened }) {
+function Navbar({ setIsOpened }) {
   const [isClicked, setIsClicked] = useState(false);
   function clickHandler() {
     isClicked === false ? setIsClicked(true) : setIsClicked(false);

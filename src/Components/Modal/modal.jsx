@@ -10,6 +10,7 @@ function Modal({ isOpened, openHandler }) {
     <div
       className="modal-container"
       style={{ display: !isOpened ? "none" : "flex" }}
+      onClick={openHandler}
     >
       <div className="modal">
         <div className="modal-heading">
