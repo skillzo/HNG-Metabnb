@@ -8,11 +8,13 @@ import Nft from "../Sections/Section2/Nft";
 import Filter from "../Components/Filter/Filter";
 import Wrapper from "../Components/UI/Wrapper/Wrapper";
 import Wrapper2 from "../Components/UI/Wrapper2/Wrapper";
+import Modal from "../Components/Modal/modal";
 
 function PlaceToStay() {
   return (
     <div>
       <Navbar />
+      <Modal />
       <Wrapper2>
         <Wrapper>
           <Filter />

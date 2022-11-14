@@ -5,8 +5,10 @@ import CloseIcon from "@mui/icons-material/Close";
 import logo from "../..//assest/img/Vector-1.png";
 import Wrapper2 from "../UI/Wrapper2/Wrapper";
 import { Link } from "react-router-dom";
-function Navbar({ setIsOpened }) {
+import { useStore } from "../../Store/Context";
+function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
+  const { setIsOpened } = useStore();
   function clickHandler() {
     isClicked === false ? setIsClicked(true) : setIsClicked(false);
   }
@@ -14,14 +16,15 @@ function Navbar({ setIsOpened }) {
   return (
     <>
       <nav className="navbar-container__mobile">
-        <div className="navbar-logo">
-          <img src={logo} alt="" />
-          <Link to="/">
+        <Link to="/">
+          <div className="navbar-logo">
+            <img src={logo} alt="" />
+
             <div className="navbar-logo__text">
               <span>M</span>etabnb
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         <div
           className="navbar-items"
@@ -35,8 +38,8 @@ function Navbar({ setIsOpened }) {
               <Link to="/placetostay">
                 <li>Place to stay</li>
               </Link>
-              <li>NFTs</li>
-              <li>Community</li>
+              <li onClick={() => setIsClicked(false)}>NFTs</li>
+              <li onClick={() => setIsClicked(false)}>Community</li>
             </ul>
           </nav>
 
@@ -58,12 +61,14 @@ function Navbar({ setIsOpened }) {
       {/* destop nav */}
       <Wrapper2>
         <nav className="navbar-container__desktop">
-          <div className="navbar-logo">
-            <img src={logo} alt="" />
-            <div className="navbar-logo__text">
-              <span>M</span>etabnb
+          <Link to="/">
+            <div className="navbar-logo">
+              <img src={logo} alt="" />
+              <div className="navbar-logo__text">
+                <span>M</span>etabnb
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div className="navbar-deskop__items">
             <nav>

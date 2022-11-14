@@ -4,8 +4,10 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import CloseIcon from "@mui/icons-material/Close";
 import image1 from "../../assest/img/icons/image 66.png";
 import image2 from "../../assest/img/icons/image 69.png";
+import { useStore } from "../../Store/Context";
 
-function Modal({ isOpened, openHandler }) {
+function Modal() {
+  const { isOpened, openHandler } = useStore();
   return (
     <div
       className="modal-container"

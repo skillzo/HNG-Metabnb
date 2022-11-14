@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../App.css";
 import Footer from "../Components/Footer/Footer";
 import Modal from "../Components/Modal/modal";
@@ -9,19 +9,11 @@ import Section2 from "../Sections/Section2/Section2";
 import Section3 from "../Sections/Section3/Section3";
 
 function Home() {
-  const [isOpened, setIsOpened] = useState(false);
-  const openHandler = () => {
-    isOpened === false ? setIsOpened(true) : setIsOpened(false);
-  };
   return (
     <div>
       <Wrapper>
-        <Navbar
-          setIsOpened={setIsOpened}
-          openHandler={openHandler}
-          isOpened={isOpened}
-        />
-        <Modal openHandler={openHandler} isOpened={isOpened} />
+        <Navbar />
+        <Modal />
         <Section1 />
         <Section2 />
       </Wrapper>
