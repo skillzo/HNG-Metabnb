@@ -16,9 +16,11 @@ function Navbar({ setIsOpened }) {
       <nav className="navbar-container__mobile">
         <div className="navbar-logo">
           <img src={logo} alt="" />
-          <div className="navbar-logo__text">
-            <span>M</span>etabnb
-          </div>
+          <Link to="/">
+            <div className="navbar-logo__text">
+              <span>M</span>etabnb
+            </div>
+          </Link>
         </div>
 
         <div
