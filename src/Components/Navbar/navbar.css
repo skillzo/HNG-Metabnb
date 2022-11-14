@@ -1,0 +1,88 @@
+.navbar-container__desktop {
+  display: none;
+}
+.navbar-container__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 5vh;
+  padding: 0.5em;
+  border-bottom: 1px solid #b840ae;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.navbar-logo__text {
+  font-weight: 800;
+  font-size: 1.4em;
+  background: linear-gradient(
+    91.47deg,
+    #dc3e88 18.25%,
+    #b840ae 43.34%,
+    #843fe8 78.18%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-logo__text span {
+  font-size: 1.4em;
+}
+.navbar-items {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  top: 4.5em;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  padding-bottom: 3em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.navbar-items ul li {
+  width: 80%;
+  margin: 2em 5%;
+  border-bottom: 1px solid #f2f5f888;
+}
+.navbar-items nav ul li:hover,
+.navbar-items nav ul li:active {
+  color: #b840ae;
+  font-weight: 700;
+}
+.connect-wallet {
+  width: 80%;
+}
+
+@media (min-width: 996px) {
+  .navbar-container__mobile {
+    display: none;
+  }
+  .navbar-container__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-deskop__items {
+    width: 30%;
+  }
+  .navbar-deskop__items nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  .navbar-deskop__items nav ul li:hover,
+  .navbar-deskop__items nav ul li:active {
+    color: #b840ae;
+    font-weight: 700;
+  }
+}
