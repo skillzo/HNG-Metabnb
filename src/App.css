@@ -23,3 +23,8 @@ button {
 ul li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}

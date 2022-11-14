@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../..//assest/img/Vector-1.png";
 import Wrapper2 from "../UI/Wrapper2/Wrapper";
-
+import { Link } from "react-router-dom";
 function Navbar({ isOpened, openHandler, setIsOpened }) {
   const [isClicked, setIsClicked] = useState(false);
   function clickHandler() {
@@ -27,9 +27,13 @@ function Navbar({ isOpened, openHandler, setIsOpened }) {
         >
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Place to stay</li>
-              <li>Nfts</li>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/placetostay">
+                <li>Place to stay</li>
+              </Link>
+              <li>NFTs</li>
               <li>Community</li>
             </ul>
           </nav>

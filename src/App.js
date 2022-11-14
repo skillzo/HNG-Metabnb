@@ -1,11 +1,15 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Navigation/Home";
 import PlaceToStay from "./Navigation/PlaceToStay";
 
 function App() {
   return (
     <div className="container">
-      <PlaceToStay />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/placetostay" element={<PlaceToStay />} />
+      </Routes>
     </div>
   );
 }
