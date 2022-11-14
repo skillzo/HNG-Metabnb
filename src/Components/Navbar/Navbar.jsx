@@ -33,10 +33,10 @@ function Navbar() {
           <nav>
             <ul>
               <Link to="/">
-                <li>Home</li>
+                <li onClick={() => setIsClicked(false)}>Home</li>
               </Link>
               <Link to="/placetostay">
-                <li>Place to stay</li>
+                <li onClick={() => setIsClicked(false)}>Place to stay</li>
               </Link>
               <li onClick={() => setIsClicked(false)}>NFTs</li>
               <li onClick={() => setIsClicked(false)}>Community</li>
