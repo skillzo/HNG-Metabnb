@@ -5,14 +5,10 @@ import CloseIcon from "@mui/icons-material/Close";
 import logo from "../..//assest/img/Vector-1.png";
 import Wrapper2 from "../UI/Wrapper2/Wrapper";
 
-function Navbar() {
-  const [isClicked, setIsClicked] = useState(true);
+function Navbar({ isOpened, openHandler, setIsOpened }) {
+  const [isClicked, setIsClicked] = useState(false);
   function clickHandler() {
-    if (isClicked === false) {
-      setIsClicked(true);
-    } else if (isClicked === true) {
-      setIsClicked(false);
-    }
+    isClicked === false ? setIsClicked(true) : setIsClicked(false);
   }
 
   return (
@@ -27,7 +23,7 @@ function Navbar() {
 
         <div
           className="navbar-items"
-          style={{ display: isClicked ? "none" : "block" }}
+          style={{ display: !isClicked ? "none" : "block" }}
         >
           <nav>
             <ul>
@@ -38,10 +34,18 @@ function Navbar() {
             </ul>
           </nav>
 
-          <button className="button1 connect-wallet">Connect wallet</button>
+          <button
+            onClick={() => {
+              setIsClicked(false);
+              setIsOpened(true);
+            }}
+            className="button1 connect-wallet"
+          >
+            Connect wallet
+          </button>
         </div>
         <div className="navbar-mobile" onClick={clickHandler}>
-          {isClicked ? <MenuIcon /> : <CloseIcon />}
+          {!isClicked ? <MenuIcon /> : <CloseIcon />}
         </div>
       </nav>
 
@@ -65,7 +69,9 @@ function Navbar() {
               </ul>
             </nav>
           </div>
-          <button className="button1">Connect wallet</button>
+          <button onClick={() => setIsOpened(true)} className="button1">
+            Connect wallet
+          </button>
         </nav>
       </Wrapper2>
     </>

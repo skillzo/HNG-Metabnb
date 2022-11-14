@@ -1,5 +1,6 @@
-.hero-body2 {
+.hero-body2__wrapper {
   margin-top: 3em;
+  margin-bottom: 0;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   color: white;
   display: flex;
@@ -23,10 +24,16 @@
 }
 
 @media (min-width: 994px) {
+  .hero-body2 {
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  }
   .hero-body2__text {
     height: 100%;
     width: 45%;
     font-size: 1.2em;
+  }
+  .hero-body2__text p {
+    width: 80%;
   }
   .hero-body2__image {
     width: 45%;
@@ -35,6 +42,7 @@
     width: 90%;
     margin: 0 5%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }

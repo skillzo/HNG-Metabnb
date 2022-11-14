@@ -2,6 +2,9 @@ import React from "react";
 import "./section1.css";
 import hero1 from "../../assest/img/hero1.png";
 import Wrapper2 from "../../Components/UI/Wrapper2/Wrapper";
+import icon1 from "../../assest/img/icons/Group 4038.png";
+import icon2 from "../../assest/img/icons/Group 59481.png";
+import icon3 from "../../assest/img/icons/Subtract.png";
 
 function Section1() {
   return (
@@ -30,15 +33,15 @@ function Section1() {
       </Wrapper2>
       <div className="header-sponsors">
         <div className="sponsor">
-          <img src="" alt="" />
+          <img src={icon2} alt="" />
           <div>MBToken</div>
         </div>
         <div className="sponsor">
-          <img src="" alt="" />
+          <img src={icon1} alt="" />
           <div>METEMASK</div>
         </div>
         <div className="sponsor">
-          <img src="" alt="" />
+          <img src={icon3} alt="" />
           <div>OpenSea</div>
         </div>
       </div>

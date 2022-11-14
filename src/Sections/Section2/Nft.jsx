@@ -1,12 +1,11 @@
 import React from "react";
+import { Ratings } from "../../Components/UI/Button/Button";
 import "./section2.css";
-
-function Nft() {
+function Nft({ image }) {
   return (
     <div className="nft-container">
-      <div className="nft-fave__icon">Love</div>
       <div className="nft-image">
-        <img src="" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="nft-details">
         <div className="nft-name">
@@ -18,7 +17,9 @@ function Nft() {
           <div className="nft-time"> available for 2weeks stay</div>
         </div>
         <div className="nft-ratings">
-          <div>Five Star logo here</div>
+          <div>
+            <Ratings />
+          </div>
         </div>
       </div>
     </div>

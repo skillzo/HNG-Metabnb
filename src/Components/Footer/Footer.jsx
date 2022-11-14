@@ -52,6 +52,20 @@ function Footer() {
         <p>Career</p>
         <p>Contact us</p>
       </div>
+      <div className="footer-socials__mobile">
+        <div className="footer-socials__main">
+          <div className="socials">
+            <FacebookIcon />
+          </div>
+          <div className="socials">
+            <InstagramIcon />
+          </div>
+          <div className="socials">
+            <TwitterIcon />
+          </div>
+        </div>
+        <div className="social1"> &copy; 2022 Metabnb</div>
+      </div>
     </footer>
   );
 }
