@@ -10,7 +10,6 @@ function Modal({ isOpened, openHandler }) {
     <div
       className="modal-container"
       style={{ display: !isOpened ? "none" : "flex" }}
-      onClick={openHandler}
     >
       <div className="modal">
         <div className="modal-heading">
@@ -19,14 +18,14 @@ function Modal({ isOpened, openHandler }) {
         </div>
         <div className="modal-main__container">
           <p>Choose your preferred wallet</p>
-          <div className="modal-main1">
+          <div className="modal-main1" onClick={openHandler}>
             <div className="modal-main">
               <img src={image1} alt="" />
               <p>Metamask</p>
             </div>
             <NavigateNextIcon />
           </div>
-          <div className="modal-main1">
+          <div className="modal-main1" onClick={openHandler}>
             <div className="modal-main">
               <img src={image2} alt="" />
               <p>WalletConnect</p>

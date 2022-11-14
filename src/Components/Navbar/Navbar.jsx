@@ -67,7 +67,9 @@ function Navbar({ isOpened, openHandler, setIsOpened }) {
             <nav>
               <ul>
                 <li>Home</li>
-                <li>Place to stay</li>
+                <Link to="/placetostay">
+                  <li>Place to stay</li>
+                </Link>
                 <li>Nfts</li>
                 <li>Community</li>
               </ul>
