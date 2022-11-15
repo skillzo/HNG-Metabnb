@@ -73,7 +73,9 @@ function Navbar() {
           <div className="navbar-deskop__items">
             <nav>
               <ul>
-                <li>Home</li>
+                <Link to="/">
+                  <li>Home</li>
+                </Link>
                 <Link to="/placetostay">
                   <li>Place to stay</li>
                 </Link>

@@ -2,8 +2,6 @@ import React from "react";
 import "./placetostay.css";
 import "../Sections/Section2/section2.css";
 import { data } from "../assest/Houses/ImageData/Data.js";
-import Footer from "../Components/Footer/Footer";
-import Navbar from "../Components/Navbar/Navbar";
 import Nft from "../Sections/Section2/Nft";
 import Filter from "../Components/Filter/Filter";
 import Wrapper from "../Components/UI/Wrapper/Wrapper";
@@ -13,7 +11,6 @@ import Modal from "../Components/Modal/modal";
 function PlaceToStay() {
   return (
     <div>
-      <Navbar />
       <Modal />
       <Wrapper2>
         <Wrapper>
@@ -27,7 +24,6 @@ function PlaceToStay() {
           </section>
         </Wrapper>{" "}
       </Wrapper2>
-      <Footer />
     </div>
   );
 }
