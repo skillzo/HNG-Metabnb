@@ -9,7 +9,7 @@ function App() {
     <ContextProvider>
       <div className="container">
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="/" index element={<Home />} />
           <Route path="/placetostay" element={<PlaceToStay />} />
         </Routes>
       </div>
