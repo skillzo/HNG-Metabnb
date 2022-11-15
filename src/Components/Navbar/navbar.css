@@ -52,6 +52,7 @@
   width: 80%;
   margin: 2em 5%;
   border-bottom: 1px solid #f2f5f888;
+  cursor: pointer;
 }
 .navbar-items nav ul li:hover,
 .navbar-items nav ul li:active {
