@@ -86,4 +86,7 @@
     color: #b840ae;
     font-weight: 700;
   }
+  .navbar-items ul li {
+    cursor: pointer;
+  }
 }
