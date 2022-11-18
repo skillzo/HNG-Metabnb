@@ -9,7 +9,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <ContextProvider>
-      <div className="container">
+      <div>
         <Navbar />
         <Routes>
           <Route path="/" index element={<Home />} />

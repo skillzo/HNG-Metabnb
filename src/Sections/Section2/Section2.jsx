@@ -7,9 +7,11 @@ function section2() {
   return (
     <Wrapper2>
       <section id="hero-body" className="hero-body">
-        <h2>Inspiration for your next adventure</h2>
+        <h2 className="font-bold  m-[1em] ">
+          Inspiration for your next adventure
+        </h2>
         <div className="nft-section__main">
-          {data.slice(0, 8).map((house) => {
+          {data.slice(0, 10).map((house) => {
             return <Nft key={house.id} id={house.id} image={house.image} />;
           })}
         </div>
